@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Something</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="js-clock">
+      <h1>00:00</h1>
+    </div>
+    <!-- 현재 시각이 나타나는 부분 -->
+
+    <form class="js-form form">
+      <input type="text" placeholder="What is your name ?" />
+    </form>
+    <!-- 사용자의 이름을 입력받는 입력 창 
+        (입력 받은 내용은 localStorage 에 저장되며 localStorage 에
+         저장된 내용이 있을 경우, 본 입력창은 hidden 된다 ) -->
+
+    <h4 class="js-greetings greetings"></h4>
+    <!-- Hello "사용자 이름" 이 나오는 부분 (localStorage 에 저장된 데이터가 있을 경우에만 나타난다)  -->
+
+    <form class="js-toDoForm">
+      <input type="text" placeholder="Write a to do and Enter" />
+    </form>
+    <!-- 사용자의 toDoList 를 입력받는 창 -->
+    <ul class="js-toDoList"></ul>
+    <!-- toDoList 들이 보여지는 곳  -->
+
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+  </body>
+</html>
